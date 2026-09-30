@@ -1,23 +1,60 @@
 @if (showModal) {
-
 <div class="modal fade d-block show animate__animated animate__fadeIn" id="eventModal" tabindex="-1">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Event Gallery</h5>
-        <button type="button" class="btn-close" (click)="closeModal()"></button>
+        <h5 class="modal-title">
+          <i class="fas fa-images me-2"></i>Event Gallery
+        </h5>
+        <button type="button" class="btn-close btn-close-white" (click)="closeModal()"></button>
       </div>
       <div class="modal-body">
         <div class="image-gallery">
           @for ( image of images; track $index; let i = $index) {
-
-          <a (click)="openLightbox(i)" >
-            <img [src]="image.src" class="gallery-img" />
-          </a>
+          <div class="gallery-card" (click)="openLightbox(i)">
+            <div class="img-wrapper">
+              <img [src]="image.src" 
+                   [alt]="image.caption || 'Event Image'" 
+                   class="gallery-img" 
+                   [style.object-position]="getCropPosition(image.cropPosition)"
+                   loading="lazy" />
+              <div class="gallery-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span class="overlay-caption">{{ image.caption }}</span>
+              </div>
+            </div>
+          </div>
           }
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Full-Screen Lightbox Image Viewer Overlay -->
+@if (selectedImageIndex !== null) {
+<div class="lightbox-backdrop animate__animated animate__fadeIn" (click)="closeLightbox()">
+  <button class="lightbox-close" (click)="closeLightbox()" aria-label="Close">
+    &times;
+  </button>
+  
+  <button class="lightbox-nav lightbox-prev" (click)="prevImage($event)" aria-label="Previous">
+    &#10094;
+  </button>
+  
+  <div class="lightbox-content" (click)="$event.stopPropagation()">
+    <img [src]="images[selectedImageIndex].src" [alt]="images[selectedImageIndex].caption" class="lightbox-img" />
+    @if (images[selectedImageIndex].caption) {
+      <div class="lightbox-caption">
+        <span>{{ images[selectedImageIndex].caption }}</span>
+        <span class="lightbox-counter">{{ selectedImageIndex + 1 }} / {{ images.length }}</span>
+      </div>
+    }
+  </div>
+  
+  <button class="lightbox-nav lightbox-next" (click)="nextImage($event)" aria-label="Next">
+    &#10095;
+  </button>
+</div>
+}
 }

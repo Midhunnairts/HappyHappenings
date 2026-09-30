@@ -4,16 +4,16 @@ import { HeaderComponent } from "./header/header.component";
 import { CardsComponent } from "./cards/cards.component";
 import Swiper from 'swiper';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { EventModalComponent } from "./event-modal/event-modal.component";
+import { EventImage, EventModalComponent } from "./event-modal/event-modal.component";
 import { IAlbum, Lightbox, LightboxModule } from 'ngx-lightbox';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ EventModalComponent,LightboxModule],
+  imports: [EventModalComponent, LightboxModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  providers:[Lightbox]
+  providers: [Lightbox]
 })
 export class AppComponent implements AfterViewInit {
   title = 'Happy-Happenings';
@@ -47,76 +47,108 @@ export class AppComponent implements AfterViewInit {
 
   showModal = false;
 
-  eventImages: IAlbum[] = [
+  eventImages: EventImage[] = [
+    {
+      src: 'assets/mandap-portrait.jpeg',
+      thumb: 'assets/mandap-portrait.jpeg',
+      caption: 'Mandap Elegance - Traditional Couple Portrait',
+      cropPosition: 'upper' // 'upper' / 'top' focuses on faces and mandap canopy
+    },
+    {
+      src: 'assets/romantic-mandap-couple.jpeg',
+      thumb: 'assets/romantic-mandap-couple.jpeg',
+      caption: 'Intimate Moments - Mandap Floral Setup',
+      cropPosition: 'upper'
+    },
+    {
+      src: 'assets/bridal-entry.jpeg',
+      thumb: 'assets/bridal-entry.jpeg',
+      caption: 'Bridal Entry - Floral Canopy Procession',
+      cropPosition: 'center'
+    },
+    {
+      src: 'assets/wedding-rituals.jpeg',
+      thumb: 'assets/wedding-rituals.jpeg',
+      caption: 'Sacred Rituals - Traditional Ceremony',
+      cropPosition: 'center'
+    },
+    {
+      src: 'assets/wedding-couple-walk.jpeg',
+      thumb: 'assets/wedding-couple-walk.jpeg',
+      caption: 'Couple Celebration - Walking Down the Aisle',
+      cropPosition: 'upper'
+    },
+    {
+      src: 'assets/outdoor-celebration.jpeg',
+      thumb: 'assets/outdoor-celebration.jpeg',
+      caption: 'Joyful Moments - Outdoor Theme Decor',
+      cropPosition: 'middle'
+    },
+    {
+      src: 'assets/aisle-walk.jpeg',
+      thumb: 'assets/aisle-walk.jpeg',
+      caption: 'Destination Wedding - Pathway Decor',
+      cropPosition: 'upper'
+    },
+    {
+      src: 'assets/family-emotion.jpeg',
+      thumb: 'assets/family-emotion.jpeg',
+      caption: 'Family Blessing - Emotion & Joy',
+      cropPosition: 'base'
+    },
+    {
+      src: 'assets/weddingDec.jpg',
+      thumb: 'assets/weddingDec.jpg',
+      caption: 'Stage & Flower Decor',
+      cropPosition: 'middle'
+    },
     {
       src: 'assets/decor9.jpg',
-      thumb: 'assets/images/event1-thumb.jpg',
-      caption: 'Event 1 - Amazing Decoration'
+      thumb: 'assets/decor9.jpg',
+      caption: 'Grand Entrance Decoration',
+      cropPosition: 'middle'
     },
     {
       src: 'assets/decor10.jpg',
-      thumb: 'assets/images/event2-thumb.jpg',
-      caption: 'Event 2 - Stunning Lights'
+      thumb: 'assets/decor10.jpg',
+      caption: 'Stunning Ambient Lighting',
+      cropPosition: 'middle'
+    },
+    {
+      src: 'assets/haldi.jpeg',
+      thumb: 'assets/haldi.jpeg',
+      caption: 'Haldi & Pre-Wedding Function',
+      cropPosition: 'upper'
     },
     {
       src: 'assets/decor8.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
+      thumb: 'assets/decor8.jpg',
+      caption: 'Elegant Banquet Setup',
+      cropPosition: 'middle'
     },
     {
       src: 'assets/anniverssary.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
+      thumb: 'assets/anniverssary.jpg',
+      caption: 'Anniversary Celebration Setup',
+      cropPosition: 'middle'
     },
     {
       src: 'assets/decor1.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
+      thumb: 'assets/decor1.jpg',
+      caption: 'Custom Theme Floral Decor',
+      cropPosition: 'middle'
     },
     {
       src: 'assets/decor.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
-    },
-    {
-      src: 'assets/bi.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
+      thumb: 'assets/decor.jpg',
+      caption: 'Royal Mandap Stage',
+      cropPosition: 'middle'
     },
     {
       src: 'assets/birthday.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
-    },
-    {
-      src: 'assets/birthday1.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
-    },
-    {
-      src: 'assets/decor2.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
-    },
-    {
-      src: 'assets/decor3.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
-    },
-    {
-      src: 'assets/decor4.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
-    },
-    {
-      src: 'assets/decor5.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
-    },
-    {
-      src: 'assets/decor6.jpg',
-      thumb: 'assets/images/event3-thumb.jpg',
-      caption: 'Event 3 - Elegant Setup'
+      thumb: 'assets/birthday.jpg',
+      caption: 'Birthday & Special Event Setup',
+      cropPosition: 'middle'
     }
   ];
 
