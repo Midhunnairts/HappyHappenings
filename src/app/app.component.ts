@@ -49,6 +49,30 @@ export class AppComponent implements AfterViewInit {
 
   eventImages: EventImage[] = [
     {
+      src: 'assets/resort-mandap-lawn.jpeg',
+      thumb: 'assets/resort-mandap-lawn.jpeg',
+      caption: 'Resort Lawn Mandap - Open Air Floral Decor',
+      cropPosition: 'top'
+    },
+    {
+      src: 'assets/groomsmen-celebration.jpeg',
+      thumb: 'assets/groomsmen-celebration.jpeg',
+      caption: 'Celebration Moments - Groomsmen Stage Photo',
+      cropPosition: 'middle'
+    },
+    {
+      src: 'assets/reception-stage-decor.jpeg',
+      thumb: 'assets/reception-stage-decor.jpeg',
+      caption: 'Grand Reception Stage - Red & White Floral Setup',
+      cropPosition: 'middle'
+    },
+    {
+      src: 'assets/vintage-mirror-decor.jpeg',
+      thumb: 'assets/vintage-mirror-decor.jpeg',
+      caption: 'Traditional Welcome Decor - Vintage Mirror & Nilavilakku',
+      cropPosition: 'middle'
+    },
+    {
       src: 'assets/mandap-portrait.jpeg',
       thumb: 'assets/mandap-portrait.jpeg',
       caption: 'Mandap Elegance - Traditional Couple Portrait',
