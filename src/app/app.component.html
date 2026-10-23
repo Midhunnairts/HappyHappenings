@@ -1,1742 +1,674 @@
-<!-- <app-header></app-header>
-<app-cards></app-cards> -->
-
-
-<div>
-
-  <div></div>
-  <div>
-  </div>
-
-
-  <div>
-    <div>
-
-
-
-
-
-
-      <div class="weddingday">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <style>
-          body {
-            overflow-x: hidden;
-          }
-
-          .container {
-            max-width: 89%;
-            width: 89%;
-            padding: 0px;
-          }
-
-          #sterling-wedding-banner {
-            padding: 5% 0%;
-            height: 109vh;
-            background-image: url("assets/background.jpg");
-            background-size: 100% auto;
-            background-position: bottom 10px center;
-            background-repeat: no-repeat;
-            position: relative;
-            overflow: hidden;
-          }
-
-          #sterling-wedding-banner::after {
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            /* background-image: url("/content/dam/sterlingv2/images/wedding-day/Wedding-Banner-0verlay.png"); */
-            background-size: 100% auto;
-            background-position: bottom 10px center;
-            background-repeat: no-repeat;
-            bottom: 0px;
-          }
-
-          #wedding-love-story .row.inner-row img {
-            height: 100%;
-            /* min-height: 19vw; */
-          }
-
-          .location-icon-content-wrapper {
-            position: absolute;
-            bottom: 6%;
-            display: flex;
-            width: 10%;
-            align-items: baseline;
-            justify-content: center;
-            z-index: 10;
-            left: 4%;
-          }
-
-          .location-icon-content-wrapper p {
-            font-size: 1.2vw;
-            font-family: 'futura-pt-book';
-            color: #fff;
-            margin-bottom: 0px;
-          }
-
-          .location-icon-content-wrapper img {
-            width: 0.8vw;
-            margin-right: 4%;
-          }
-
-          #sterling-wedding-banner .banner-btn-wrapper {
-            position: absolute;
-            right: 3%;
-            top: 33%;
-          }
-
-          #sterling-wedding-banner .banner-btn-wrapper .wedding-btn-wrapper a {
-            padding: 1.35vw 4vw;
-          }
-
-          @media(min-width: 1150px) {
-            #sterling-wedding-banner {
-              height: 112vh;
-              background-size: 100% 100%;
-            }
-
-            #sterling-wedding-banner .banner-btn-wrapper {
-              position: absolute;
-              right: 3%;
-              bottom: 5%;
-            }
-          }
-
-          #sterling-wedding-banner .navar-banner-img {
-            width: 37%;
-            margin: auto;
-            font-size: 50px;
-            text-align: center;
-            font-family: "Oleo Script Swash Caps", serif;
-            font-weight: 700;
-            font-style: normal;
-            display: block;
-            margin-bottom: -5px;
-            /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%); */
-          }
-
-          #sterling-wedding-banner h1 {
-            font-size: 2.2vw;
-            /* color: rgba(0, 0, 0, 1); */
-            color: #fff;
-            margin: auto;
-            text-align: center;
-            /* margin-top: 3%; */
-            font-family: 'avegas-royale-bold';
-          }
-
-          #sterling-wedding-emotion {
-            padding: 6% 0%;
-            background-image: url("assets/Emotion-side-bg.webp");
-            background-size: 53% auto;
-            background-position: top right;
-            background-repeat: no-repeat;
-          }
-
-          #sterling-wedding-emotion .row .col-lg-6:last-child {
-            margin: auto;
-          }
-
-          #sterling-wedding-emotion .row .emotion-text-wrapper {
-            width: 80%;
-            padding-left: 1%;
-          }
-
-          #sterling-wedding-emotion .row img {
-            width: 93%;
-          }
-
-          #sterling-wedding-emotion .row .emotion-text-wrapper h3 {
-            font-size: 2.5vw;
-            font-family: 'avegas-royale-bold';
-            color: #000;
-            width: 90%;
-          }
-
-          #sterling-wedding-emotion .row .emotion-text-wrapper p {
-            color: #565454;
-            font-family: 'futura-pt-book';
-            margin-top: 3%;
-            line-height: 1.4;
-            letter-spacing: 0;
-            font-size: 1.25vw;
-          }
-
-          #sterling-wedding-emotion .emotion-bottom-boxes h5 {
-            color: #565454;
-            font-family: 'futura-pt-book';
-            margin-top: 1%;
-            line-height: 1.4;
-            letter-spacing: 0;
-            font-size: 1.25vw;
-            text-align: center;
-            min-height: 3vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-
-          #sterling-wedding-emotion .emotion-bottom-boxes img {
-            width: 40%;
-            margin: auto;
-            display: block;
-            margin-bottom: 4%;
-          }
-
-          #sterling-wedding-emotion .emotion-box-card {
-            width: 13%;
-          }
-
-          .card-image-wrapper {
-            min-height: 6vw;
-            display: flex;
-            margin-bottom: 3%;
-            align-items: baseline;
-          }
-
-          #sterling-wedding-emotion .emotion-box-card.emotion-box-card-three img,
-          #sterling-wedding-emotion .emotion-box-card.emotion-box-card-six img {
-            width: 45%;
-          }
-
-          #sterling-wedding-emotion .emotion-bottom-boxes {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            margin-top: 7%;
-            width: 100%;
-          }
-
-          #wedding-video-section {
-            width: 100%;
-            padding: 0px;
-            padding-bottom: 5%;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            padding: 0px 50px;
-          }
-
-          #wedding-video-section img {
-            width: 100%;
-            padding-bottom: 3.5%;
-          }
-
-          #wedding-video-section h3 {
-            font-family: 'avegas-royale-bold';
-            font-size: 1.6vw;
-            width: 70%;
-            text-align: center;
-            line-height: 1.35;
-            margin-top: 2%;
-            color: #434343;
-            margin: auto;
-          }
-
-          #wedding-video-section h3 a {
-            font-family: 'avegas-royale-bold';
-            font-size: 1.6vw;
-            line-height: 1.35;
-            color: #906E10;
-            text-decoration: underline;
-          }
-
-          /* wedding swiper css */
-          #happily-wedding-swiper {
-            padding: 6% 0%;
-            padding-top: 1%;
-          }
-
-          #happily-wedding-swiper h2,
-          #popular-wedding-location h2 {
-            font-size: 2.6vw;
-            font-family: 'avegas-royale-bold';
-            color: #000000;
-            width: 65%;
-            margin-bottom: 4%;
-          }
-
-          #happily-wedding-swiper .swiper-button-next {
-            right: 10px;
-            left: auto;
-            bottom: unset !important;
-            top: -18%;
-            background-image: url("assets/swiper-next-btn.png");
-            width: 3.3vw;
-            height: 3.3vw;
-            background-size: 100% 100%;
-            background-position: center;
-            opacity: 1;
-          }
-
-          #happily-wedding-swiper .swiper-button-prev {
-            bottom: unset !important;
-            top: -18%;
-            left: unset;
-            right: 6.5%;
-            background-image: url("assets/swiper-next-btn.png");
-            width: 3.3vw;
-            height: 3.3vw;
-            background-size: 100% 100%;
-            background-position: center;
-            transform: rotate(180deg);
-            opacity: 1;
-          }
-
-          #happily-wedding-swiper .swiper {
-            overflow-y: visible !important;
-            overflow-x: clip;
-          }
-
-          #happily-wedding-swiper .swiper-button-next:after,
-          #happily-wedding-swiper .swiper-button-prev:after {
-            display: none;
-          }
-
-          #happily-wedding-swiper .swiper-button-prev.swiper-button-disabled {
-            background-image: url("assets/swiper-prev-btn.png");
-            width: 3.3vw;
-            height: 3.3vw;
-            background-size: 100% 100%;
-            background-position: center;
-            opacity: 1;
-            transform: rotate(0deg);
-          }
-
-          #happily-wedding-swiper .swiper-button-next.swiper-button-disabled {
-            background-image: url("assets/swiper-prev-btn.png");
-            width: 3.3vw;
-            height: 3.3vw;
-            background-size: 100% 100%;
-            background-position: center;
-            transform: rotate(180deg);
-            opacity: 1;
-          }
-
-          #happily-wedding-swiper .swiper-card-wrapper h4 {
-            font-size: 1.7vw;
-            font-family: 'avegas-royale-bold';
-            color: #000000;
-            width: 90%;
-            margin-top: 8%;
-          }
-
-          #happily-wedding-swiper .swiper-card-wrapper p {
-            font-size: 1.2vw;
-            font-family: 'futura-pt-book';
-            color: #565454;
-            margin-top: 3%;
-            margin-bottom: 3%;
-            width: 91%;
-          }
-
-          #happily-wedding-swiper .swiper-card-wrapper {
-            padding-right: 2%
-          }
-
-          .popular-wedding-location-wrapper {
-            margin-bottom: 4%;
-          }
-
-          /* wedding swiper css */
-          #wedding-love-story {
-            padding: 5% 0%;
-            /* background-image: url("/content/dam/sterlingv2/images/wedding-day/love-story-bg.png"); */
-            background-size: 50% auto;
-            background-position: bottom right;
-            background-repeat: no-repeat;
-            background-color: #f9f9f9;
-          }
-
-          #wedding-love-story h3 {
-            font-size: 2.6vw;
-            font-family: 'avegas-royale-bold';
-            color: #434343;
-            width: 55%;
-            margin-bottom: 3%;
-          }
-
-          #wedding-love-story .row.inner-row {
-            margin-bottom: 6%;
-            background: #fff;
-          }
-
-          #wedding-love-story .love-story-card h3 {
-            font-size: 1.7vw;
-            font-family: 'avegas-royale-bold';
-            color: #000;
-            width: 100%;
-            margin-bottom: 3%;
-          }
-
-          #wedding-love-story .love-story-card p,
-          #popular-wedding-location p {
-            font-size: 1.2vw;
-            font-family: 'futura-pt-book';
-            color: #565454;
-            width: 100%;
-            margin-bottom: 0%;
-          }
-
-          #wedding-love-story .love-story-card a,
-          #popular-wedding-location a {
-            font-size: 1.2vw;
-            font-family: 'futura-pt-book';
-            color: #565454;
-            width: 100%;
-            margin-bottom: 0%;
-            text-decoration: none;
-          }
-
-
-          #wedding-love-story .love-store-outer-wrapper {
-            width: 96%;
-            /* margin: auto; */
-          }
-
-          #wedding-love-story .row.inner-row .col-lg-6:last-child {
-            background-color: #fff;
-            display: flex;
-          }
-
-          #wedding-love-story .love-story-card {
-            padding: 3%;
-            padding-left: 2%;
-            padding-top: 4%;
-            padding-bottom: 5%;
-          }
-
-          #wedding-love-story .row.inner-row img {
-            height: 100%;
-          }
-
-          #wedding-love-story .row.inner-row .col-lg-6:first-child {
-            padding-right: 0px;
-          }
-
-          #wedding-love-story .row.inner-row .col-lg-6:last-child {
-            padding-left: 0px;
-          }
-
-          #wedding-love-story .btn-wrapper-outer-lv {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin-top: 3%;
-          }
-
-          #wedding-love-story .btn-wrapper-outer-lv .wedding-btn-wrapper:first-child {
-            /* margin-right: 4%; */
-          }
-
-          #wedding-love-story .btn-wrapper-outer-lv .wedding-btn-wrapper:last-child {
-            position: relative;
-            left: -1%;
-          }
-
-          #wedding-love-story .btn-wrapper-outer-lv .wedding-btn-wrapper a {
-            padding: 1.55vw 2vw;
-            min-width: 14vw;
-            text-align: center;
-          }
-
-          #wedding-testimonal-section {
-            padding: 5% 0%;
-            padding-bottom: 7%;
-            background-color: #D8B350;
-          }
-
-          #wedding-testimonal-section h2 {
-            font-size: 2.6vw;
-            font-family: 'avegas-royale-bold';
-            color: #000000;
-            margin-bottom: 4%;
-            text-align: center;
-          }
-
-          #wedding-testimonal-section .testimonal-content-wrapper {
-            background-color: #fff;
-            padding: 9%;
-            min-height: 23vw;
-            padding-left: 10%;
-          }
-
-          #wedding-testimonal-section .testimonal-content-wrapper h3 {
-            font-size: 1.6vw;
-            color: #906E10;
-            padding-left: 8%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            font-family: 'avegas-royale-bold';
-          }
-
-          #wedding-testimonal-section .testimonal-content-wrapper p {
-            font-size: 1.15vw;
-            font-family: 'futura-pt-book';
-            color: #565454;
-            width: 100%;
-            margin-bottom: 7%;
-          }
-
-          #wedding-testimonal-section .testimonal-content-wrapper h3::after {
-            content: "";
-            position: absolute;
-            width: 0.05vw;
-            height: 2.5vw;
-            background-color: #906E10;
-            left: 0px;
-          }
-
-          #wedding-enquire-section {
-            padding: 7% 0%;
-            background-image: url("assets/weddingDecor.jpeg");
-            background-attachment: fixed;
-            background-size: 105% auto;
-            background-position: bottom;
-            background-repeat: no-repeat;
-            position: relative;
-            --webkit-transform: translate3d(0, 0, 0);
-            /* margin-bottom: 4%; */
-          }
-
-          #wedding-enquire-section h4 {
-            text-align: center;
-            width: 70%;
-            font-family: 'avegas-royale-bold';
-            font-size: 2.6vw;
-            color: #fff;
-            margin: auto;
-            position: relative;
-            z-index: 1;
-            margin-bottom: 3%;
-          }
-
-          .wedding-btn-wrapper a {
-            color: white;
-            font-size: 1.2vw;
-            font-family: 'avegas-royale-bold';
-            width: max-content;
-            padding: 1.50vw 4vw;
-            background-color: rgb(227 141 172);
-            ;
-            position: relative;
-            margin: auto;
-            display: block;
-            z-index: 1;
-            text-decoration: none;
-            margin-bottom: 0px;
-            line-height: 1.2;
-            transition: 0.2s linear;
-            border: 1px solid rgb(227 141 172);
-            ;
-          }
-
-          .wedding-btn-wrapper a:hover {
-            color: rgb(227 141 172);
-            background-color: white;
-            transition: 0.2s linear;
-            border: 1px solid rgb(227 141 172);
-          }
-
-          #sterling-gift-card-sec {
-            padding: 9% 0%;
-            background-image: url("assets/sterling-gift-card-bg.webp");
-            background-size: 60% auto;
-            background-position: bottom left;
-            background-repeat: no-repeat;
-          }
-
-          #sterling-gift-card-sec .row .col-lg-6:last-child {
-            margin: auto;
-          }
-
-          #sterling-gift-card-sec .row .emotion-text-wrapper {
-            width: 100%;
-          }
-
-          #sterling-gift-card-sec .wedding-btn-wrapper a {
-            margin-left: 0px;
-            padding: 1.45vw 4vw;
-          }
-
-          #sterling-gift-card-sec .row img {
-            width: 85%;
-            padding-left: 12%;
-            padding-right: 0px;
-          }
-
-          #sterling-gift-card-sec .row .emotion-text-wrapper h3 {
-            font-size: 2.5vw;
-            font-family: 'avegas-royale-bold';
-            color: #000;
-            width: 100%;
-          }
-
-          #sterling-gift-card-sec .row .emotion-text-wrapper p {
-            color: #565454;
-            font-family: 'futura-pt-book';
-            margin-top: 3%;
-            line-height: 1.4;
-            letter-spacing: 0;
-            font-size: 1.25vw;
-            width: 85%
-          }
-
-          #sterling-gift-card-sec .emotion-bottom-boxes h5 {
-            color: #565454;
-            font-family: 'futura-pt-book';
-            margin-top: 1%;
-            line-height: 1.4;
-            letter-spacing: 0;
-            font-size: 1.25vw;
-            text-align: center;
-            min-height: 3vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-
-          #sterling-wedding-emotion .emotion-bottom-boxes .box-part-emotion {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-          }
-
-          .emotion-bottom-boxes.mobile-view {
-            display: none !important;
-          }
-
-          @media(min-width: 767px) {
-            .testimonal-inner-wrapper {
-              width: 101%;
-            }
-          }
-
-          @media (min-width: 767px) and (max-width: 992px) {
-            #sterling-wedding-banner {
-              padding: 8% 0%;
-              padding-bottom: 32%;
-              height: unset;
-            }
-
-            #wedding-love-story .love-story-card {
-              padding: 5%;
-              padding-left: 9%;
-              padding-right: 2%;
-            }
-
-            #wedding-love-story .love-store-outer-wrapper {
-              width: 100%;
-            }
-
-            .btn-wrapper-outer-lv.mt-4.pt-3 {
-              padding-top: 10px !important;
-              margin-top: 0px !important;
-            }
-
-            #sterling-wedding-banner h1 {
-              font-size: 4vw;
-            }
-
-            p {
-              font-size: 1.3vw !important;
-            }
-
-            #wedding-video-section h3 {
-              font-size: 2vw;
-            }
-
-            #wedding-testimonal-section .testimonal-content-wrapper {
-              min-height: 26vw;
-            }
-
-            #sterling-gift-card-sec .row img {
-              width: 90%;
-              padding-left: 9%;
-              padding-right: 0px;
-            }
-
-            #wedding-video-section h3 a {
-              font-size: 2vw;
-            }
-
-            #happily-wedding-swiper .swiper-card-wrapper h4 {
-              font-size: 2vw;
-              margin-top: 5%;
-            }
-
-            .wedding-btn-wrapper a {
-              font-size: 1.6vw;
-              margin-top: 3%;
-            }
-
-            .btn-wrapper-outer-lv.mt-5.pt-3 {
-              margin-top: 3% !important;
-            }
-
-            #wedding-love-story .love-story-card h3 {
-              font-size: 2vw;
-            }
-
-            #wedding-testimonal-section .testimonal-content-wrapper h3 {
-              font-size: 2vw;
-            }
-
-            #wedding-testimonal-section h2 {
-              font-size: 3vw;
-            }
-
-            #wedding-love-story h3 {
-              font-size: 3vw;
-            }
-
-            #happily-wedding-swiper h2,
-            #popular-wedding-location h2 {
-              font-size: 3vw;
-            }
-
-            #happily-wedding-swiper .swiper-button-next {
-              width: 4.5vw;
-              height: 4.5vw;
-              top: -15%;
-            }
-
-            #happily-wedding-swiper .swiper-button-prev {
-              width: 4.5vw;
-              height: 4.5vw;
-              top: -15%;
-              right: 9%;
-            }
-
-            #happily-wedding-swiper .swiper-button-next.swiper-button-disabled {
-              width: 4.5vw;
-              height: 4.5vw;
-            }
-
-            #happily-wedding-swiper .swiper-button-prev.swiper-button-disabled {
-              width: 4.5vw;
-              height: 4.5vw;
-            }
-          }
-
-          @media (max-width: 767px) {
-            #sterling-wedding-banner {
-              padding: 10% 0%;
-              padding-bottom: 25%;
-              height: unset;
-              background-size: 180% auto;
-            }
-
-            #sterling-wedding-banner .navar-banner-img {
-              width: 80%;
-            }
-
-            #sterling-wedding-banner h1 {
-              font-size: 24px;
-            }
-
-            p {
-              font-size: 16px !important;
-              width: 97% !important;
-            }
-
-            .love-story-card a,
-            #popular-wedding-location a {
-              font-size: 16px !important;
-            }
-
-            #sterling-wedding-emotion .row .emotion-text-wrapper {
-              width: 97%;
-              padding-left: 1%;
-            }
-
-            #sterling-wedding-emotion .row .emotion-text-wrapper h3 {
-              font-size: 22px;
-              margin-top: 5%;
-            }
-
-            #wedding-video-section {
-              display: block;
-              padding: 0px 30px;
-            }
-
-            #wedding-video-section h3 {
-              font-size: 16px;
-              width: 80%;
-            }
-
-            #wedding-video-section h3 a {
-              font-size: 16px;
-            }
-
-            #sterling-wedding-emotion .emotion-bottom-boxes h5 {
-              font-size: 14px;
-            }
-
-            #sterling-wedding-emotion .emotion-bottom-boxes {
-              display: flex;
-              width: 100%;
-              margin-top: 10%;
-            }
-
-            #sterling-wedding-emotion .emotion-bottom-boxes .box-part-emotion {
-              display: flex;
-              width: 100%;
-              align-items: baseline;
-            }
-
-            #happily-wedding-swiper {
-              padding: 10% 0%;
-              padding-top: 1%;
-            }
-
-            #sterling-wedding-emotion .emotion-box-card {
-              width: 90%;
-              min-height: 36vw;
-              vertical-align: text-bottom;
-            }
-
-            .card-image-wrapper {
-              min-height: 17vw;
-            }
-
-            #happily-wedding-swiper .swiper-card-wrapper h4 {
-              font-size: 2vw;
-              margin-top: 5%;
-            }
-
-            .wedding-btn-wrapper a {
-              font-size: 18px;
-              margin-top: 3%;
-              margin-bottom: 6%;
-              padding: 10px 20px;
-              width: 230px;
-              text-align: center;
-            }
-
-            .btn-wrapper-outer-lv.mt-5.pt-3 {
-              margin-top: 3% !important;
-            }
-
-            #wedding-love-story .love-story-card h3 {
-              font-size: 20px;
-            }
-
-            #wedding-testimonal-section .testimonal-content-wrapper h3 {
-              font-size: 18px;
-            }
-
-            #wedding-testimonal-section .testimonal-content-wrapper h3::after {
-              width: 1px;
-              height: 18px;
-            }
-
-            #wedding-testimonal-section .testimonal-content-wrapper {
-              padding: 7%;
-              margin-bottom: 10%;
-            }
-
-            #wedding-testimonal-section h2 {
-              font-size: 24px;
-              margin-bottom: 8%;
-            }
-
-            #wedding-love-story h3 {
-              font-size: 22px;
-              width: 95%;
-              margin-bottom: 8%;
-            }
-
-            #happily-wedding-swiper h2,
-            #popular-wedding-location h2 {
-              font-size: 22px;
-              width: 100%;
-            }
-
-            #wedding-video-section {
-              padding-bottom: 10%;
-            }
-
-            #happily-wedding-swiper .swiper-card-wrapper h4 {
-              font-size: 20px;
-              margin-top: 5%;
-            }
-
-            .container {
-              max-width: 85%;
-              width: 85%;
-              padding: 0px;
-            }
-
-            #happily-wedding-swiper h2,
-            #popular-wedding-location h2 {
-              font-size: 22px;
-              width: 100%;
-              margin-bottom: 10%;
-            }
-
-            #happily-wedding-swiper .swiper-button-next {
-              top: -6%;
-              width: 35px;
-              height: 35px;
-            }
-
-            #happily-wedding-swiper .swiper-button-prev {
-              top: -6%;
-              width: 35px;
-              height: 35px;
-              right: 55px;
-            }
-
-            #happily-wedding-swiper .swiper-button-next.swiper-button-disabled {
-              width: 35px;
-              height: 35px;
-            }
-
-            #happily-wedding-swiper .swiper-button-prev.swiper-button-disabled {
-              width: 35px;
-              height: 35px;
-            }
-
-            #wedding-love-story {
-              padding: 10% 0%;
-            }
-
-            #wedding-love-story .row.inner-row .col-lg-6 {
-              padding: 0px;
-              background-color: unset !important;
-            }
-
-            #wedding-love-story .love-story-card {
-              padding: 6%;
-              padding-bottom: 10%;
-              margin-bottom: 0%;
-              background-color: #fff;
-              width: 100%;
-            }
-
-            #wedding-love-story .love-store-outer-wrapper {
-              width: 92%;
-              /* margin: auto; */
-              margin-bottom: 10%;
-            }
-
-            #wedding-love-story .btn-wrapper-outer-lv {
-              display: block;
-            }
-
-            #wedding-love-story .btn-wrapper-outer-lv .wedding-btn-wrapper:first-child {
-              margin-right: 0%;
-            }
-
-            #wedding-testimonal-section {
-              padding: 10% 0%;
-              padding-bottom: 5%;
-              background-color: #D8B350;
-            }
-
-            #wedding-enquire-section h4 {
-              width: 100%;
-              font-size: 18px;
-            }
-
-            #sterling-wedding-emotion {
-              padding: 10% 0%;
-            }
-
-            #wedding-enquire-section {
-              background-size: 200% auto;
-            }
-
-            #sterling-wedding-emotion .row img {
-              width: 100%;
-            }
-
-            #wedding-love-story .row .col-lg-6:last-child .row .col-lg-6:last-child {
-              margin-bottom: -15% !important;
-            }
-
-            #sterling-gift-card-sec {
-              padding: 10% 0%;
-            }
-
-            #sterling-gift-card-sec .row img {
-              width: 85%;
-              padding: 0px;
-              margin: auto;
-              display: block;
-              margin-bottom: 8%;
-            }
-
-            #sterling-gift-card-sec .wedding-btn-wrapper a {
-              margin-left: auto;
-              padding: 10px 20px;
-              margin-top: -5%;
-            }
-
-            #wedding-enquire-section {
-              padding: 13% 0%;
-              padding-bottom: 7%;
-            }
-
-            #sterling-gift-card-sec .row .emotion-text-wrapper h3 {
-              font-size: 24px;
-            }
-
-            #wedding-love-story .btn-wrapper-outer-lv .wedding-btn-wrapper a {
-              padding: 13px 20px;
-              min-width: 200px;
-              text-align: center;
-              font-size: 18px;
-            }
-
-            #sterling-wedding-emotion {
-              background-size: 120% auto;
-            }
-
-            #wedding-love-story {
-              background-size: 120% auto;
-            }
-
-            #sterling-gift-card-sec {
-              background-size: 120% auto;
-            }
-
-            #sterling-wedding-banner .banner-btn-wrapper .wedding-btn-wrapper a {
-              padding: 13px 13px;
-              width: 190px;
-            }
-
-            #sterling-wedding-banner .banner-btn-wrapper {
-              position: fixed;
-              right: -19%;
-              bottom: 65%;
-              transform: rotate(90deg);
-              z-index: 10;
-            }
-
-            .btn-wrapper-outer-lv.mt-4.pt-3 {
-              margin-top: 10px !important;
-              padding-top: 5px !important;
-            }
-
-            #wedding-love-story .btn-wrapper-outer-lv {
-              margin-top: 14%;
-            }
-
-            .emotion-bottom-boxes.mobile-view {
-              display: block !important;
-            }
-
-            .emotion-bottom-boxes.desktop-view {
-              display: none !important;
-            }
-
-            #sterling-wedding-emotion .emotion-bottom-boxes .box-part-emotion {
-              display: flex;
-              width: 100%;
-              vertical-align: baseline;
-              margin-top: 4%;
-              align-items: baseline;
-            }
-
-            #wedding-love-story .btn-wrapper-outer-lv .wedding-btn-wrapper:last-child {
-              position: relative;
-              left: 0%;
-            }
-
-            #wedding-love-story .btn-wrapper-outer-lv .wedding-btn-wrapper a {
-              min-width: 100%;
-            }
-          }
-
-          @media(min-width: 1600px) {
-            .img-fluid {
-              width: 100%;
-            }
-
-            .testimonal-inner-wrapper {
-              width: 100%;
-              padding-right: 3%;
-            }
-          }
-
-          @media (min-width: 767px) {
-            #wedding-enquire-section {
-              background-size: 100% 100%;
-            }
-          }
-
-          #spformnavarasabrochure input {
-            font-size: 1.5em;
-          }
-
-
-
-          .accordion-content-flex {
-            font-family: 'futura-pt-book';
-          }
-
-          .accordion-header {
-            font-family: 'futura-pt-book';
-            font-weight: normal;
-          }
-        </style>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-        <div>
-
-
-          <section class="container-fluid" id="sterling-wedding-banner">
-            <div class="container">
-              <img src="assets/rmbg.png" alt="Nav-text-layer" class="img-fluid navar-banner-img">
-              <!-- <div class="img-fluid navar-banner-img"> HAPPY HAPPENINGS</div> -->
-              <h1>Celebrate Love, Intimately.</h1>
-
-              <div class="banner-btn-wrapper">
-                <div class="wedding-btn-wrapper ml-0">
-                  <a x-cq-linkchecker="skip" href="https://wa.me/917510123870">Enquire
-                    Now</a>
-                </div>
-              </div>
-
-              <div class="location-icon-content-wrapper">
-                <img src="assets/Location-icon-wedding.webp" alt="Location-icon-wedding" class="img-fluid">
-                <p>Kerala and Karnataka</p>
-              </div>
-            </div>
-          </section>
-
-
-
-
-          <section class="container-fluid" id="sterling-wedding-emotion">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 ">
-                  <div class="emotion-image-wrapper">
-                    <img src="assets/outdoor-celebration.jpeg" alt="Happy-Happenings-Wedding-Emotion" class="img-fluid"
-                      style="border-radius: 12px; object-fit: cover;">
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                  <div class="emotion-text-wrapper">
-                    <h3>Every feeling deserves its perfect moment.</h3>
-                    <p>Celebrate the essence of your love story in a way that’s uniquely yours. Step away from the
-                      ordinary and say "I do" in complete seclusion. At Happy Happenings - Intimate Weddings by
-                      Sterling, you can transform the entire resort into your personal sanctuary. From the heartfelt
-                      vows to the joyous celebrations, every moment unfolds in stunning surroundings, shared only with
-                      those closest to you. This exclusive experience allows you to customize every aspect, making your
-                      wedding a true reflection of your love. Let Happy Happenings craft a celebration where every
-                      feeling is cherished, creating memories that you and your loved ones will treasure forever.</p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="emotion-bottom-boxes desktop-view">
-                <div class="emotion-box-card emotion-box-card-one">
-                  <div class="card-image-wrapper">
-                    <img src="assets/resort.png" alt="Choose-to-Book" class="img-fluid">
-                  </div>
-                  <h5>Choose to Book the entire Resort</h5>
-                </div>
-
-                <div class="emotion-box-card emotion-box-card-two">
-                  <div class="card-image-wrapper">
-                    <img src="assets/location.png" alt="Multiple-Venue" class="img-fluid">
-                  </div>
-                  <h5>Multiple Venue</h5>
-                </div>
-
-
-                <!-- <div class="emotion-box-card emotion-box-card-three">
-                    <div class="card-image-wrapper">
-                      <img src="/content/dam/sterlingv2/images/wedding-day/Live-Streaming.png" alt="Live-Streaming"
-                        class="img-fluid">
-                    </div>
-                    <h5>Live Streaming</h5>
-                  </div> -->
-
-                <div class="emotion-box-card emotion-box-card-four">
-                  <div class="card-image-wrapper">
-                    <img src="assets/juggling.png" alt="Creative-Engaging" class="img-fluid">
-                  </div>
-                  <h5>Games</h5>
-                </div>
-
-
-                <div class="emotion-box-card emotion-box-card-five">
-                  <div class="card-image-wrapper">
-                    <img src="assets/wedding-arch.png" alt="Curated-themed-Decor" class="img-fluid">
-                  </div>
-                  <h5>Themed Decor</h5>
-                </div>
-
-                <!-- <div class="emotion-box-card emotion-box-card-six">
-                    <div class="card-image-wrapper">
-                      <img src="/content/dam/sterlingv2/images/wedding-day/Traditional-Culinary-Experience.png"
-                        alt="Traditional-Culinary-Experience" class="img-fluid">
-                    </div>
-                    <h5>Traditional Culinary Experience</h5>
-                  </div> -->
-              </div>
-
-              <div class="emotion-bottom-boxes mobile-view">
-
-                <div class="box-part-emotion">
-                  <div class="emotion-box-card emotion-box-card-one">
-                    <div class="card-image-wrapper">
-                      <img src="assets/resort.png" alt="Choose-to-Book" class="img-fluid">
-                    </div>
-                    <h5>Choose to Book the entire Resort</h5>
-                  </div>
-
-                  <div class="emotion-box-card emotion-box-card-two">
-                    <div class="card-image-wrapper">
-                      <img src="assets/location.png" alt="Multiple-Venue" class="img-fluid">
-                    </div>
-                    <h5>Multiple Venue</h5>
-                  </div>
-                </div>
-
-                <div class="box-part-emotion">
-                  <!-- <div class="emotion-box-card emotion-box-card-three">
-                    <div class="card-image-wrapper">
-                      <img src="/content/dam/sterlingv2/images/wedding-day/Live-Streaming.png" alt="Live-Streaming"
-                        class="img-fluid">
-                    </div>
-                    <h5>Live Streaming</h5>
-                  </div> -->
-
-                  <div class="emotion-box-card emotion-box-card-four">
-                    <div class="card-image-wrapper">
-                      <img src="assets/juggling.png" alt="Creative-Engaging" class="img-fluid">
-                    </div>
-                    <h5>Creative Engaging <br> Activities</h5>
-                  </div>
-
-                  <div class="emotion-box-card emotion-box-card-five">
-                    <div class="card-image-wrapper">
-                      <img src="assets/wedding-arch.png" alt="Curated-themed-Decor" class="img-fluid">
-                    </div>
-                    <h5>Curated themed <br> Decor</h5>
-                  </div>
-                </div>
-                <!-- <div class="box-part-emotion"> -->
-
-
-                <!-- <div class="emotion-box-card emotion-box-card-six">
-                    <div class="card-image-wrapper">
-                      <img src="/content/dam/sterlingv2/images/wedding-day/Traditional-Culinary-Experience.png"
-                        alt="Traditional-Culinary-Experience" class="img-fluid">
-                    </div>
-                    <h5>Traditional Culinary Experience</h5>
-                  </div> -->
-                <!-- </div> -->
-
-              </div>
-            </div>
-          </section>
-
-          <section class="container-fluid" id="popular-wedding-location">
-            <div class="container">
-              <h2>Popular Wedding Destinations</h2>
-              <div class="popular-wedding-location-wrapper">
-                <p><a>Kufri</a> | <a>Aravalli Udaipur</a> |<a>Mount Abu</a> | <a>Puri</a> | <a>City Centre Bokaro</a> |
-                  <a>Darjeeling</a> |<a>Lake Palace Alleppey
-                  </a> |<a href="">Munnar</a> | <a>Kodai - Valley</a> | <a>Ooty - Elk Hill</a> | <a>Ooty-Fern Hill</a> |
-                  <a>Yercaud</a> | <a>Wayanad</a>
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section class="container-fluid" id="wedding-video-section">
-            <!-- <video autoplay="true" muted="" loop="" id="wedding-video-wrapper">
-              <source src="assets/videodecor.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video> -->
-            <img src="assets/videodecor.gif" alt="" style=" content-visibility: auto;
-  object-fit: contain; image-rendering: auto; will-change: transform; transform: translate3d(0, 0, 0);">
-            <!-- <img src="assets/decorvideo.png" alt="Decor animation"> -->
-            <!-- <picture>
-              <source srcset="assets/videodecor.gif" type="image/gif">
-              <img src="assets/videodecor.gif" alt="GIF Animation">
-            </picture> -->
-            <h3>
-              Want to explore more? <a href="https://www.instagram.com/_happy_happenings?igsh=cHVtMW52MW5sZDl3"
-                target="_blank">Visit our Instagram
-                page</a> for inspiration and updates.
-            </h3>
-          </section>
-
-          <section class="container-fluid" id="happily-wedding-swiper">
-            <div class="container">
-              <h2>Capture the magic of your "happily before and ever after" moments in breathtakingly beautiful
-                settings, turning them into timeless treasures.</h2>
-              <div class="happily-wedding-siwper-wrapper">
-                <div #swiperContainer
-                  class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-                  <div class="swiper-wrapper" id="swiper-wrapper-23bc4bcefe5c7591" aria-live="polite">
-
-                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 9">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/bridal-entry.jpeg" alt="wd-Bridal-Entry" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover;">
-                        <h4>Bridal Entry & Procession</h4>
-                        <p>Make a breathtaking entrance under custom floral canopies, surrounded by family traditions
-                          and joyful celebrations.</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/mandap-portrait.jpeg" alt="wd-Mandap-Decor" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover; object-position: top center;">
-                        <h4>Mandap & Stage Setup</h4>
-                        <p>Transform your sacred wedding vows into a fairytale experience with handcrafted floral
-                          mandaps and magnificent stage designs.</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" role="group" aria-label="3 / 9">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/wedding-rituals.jpeg" alt="wd-Wedding-Rituals" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover;">
-                        <h4>Sacred Wedding Rituals</h4>
-                        <p>Capture every sacred tradition and emotional ritual with graceful setups designed to honour
-                          culture and heritage.</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" role="group" aria-label="4 / 13">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/resort-mandap-lawn.jpeg" alt="wd-Resort-Mandap" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover; object-position: top center;">
-                        <h4>Resort Lawn Mandap</h4>
-                        <p>Experience magical open-air vows with tropical palm backdrops, white blossom floral arches, and elegant lawn seating.</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" role="group" aria-label="5 / 13">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/reception-stage-decor.jpeg" alt="wd-Reception-Stage" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover;">
-                        <h4>Grand Reception Stage</h4>
-                        <p>Make your evening reception spectacular with royal red & white floral walls, glowing chandeliers, and plush stage seating.</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" role="group" aria-label="6 / 13">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/vintage-mirror-decor.jpeg" alt="wd-Vintage-Decor" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover;">
-                        <h4>Traditional Vintage Decor</h4>
-                        <p>Welcome your guests with heritage wooden mirrors, traditional brass nilavilakku oil lamps, and floral arrangements.</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" role="group" aria-label="7 / 13">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/groomsmen-celebration.jpeg" alt="wd-Celebration-Party" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover;">
-                        <h4>Wedding Party Celebrations</h4>
-                        <p>Create unforgettable memories with high-energy group celebrations, stylish photo-ops, and vibrant party vibes.</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" role="group" aria-label="8 / 13">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/outdoor-celebration.jpeg" alt="wd-Outdoor-Celebration" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover;">
-                        <h4>Outdoor Celebrations</h4>
-                        <p>Celebrate your love story amidst nature, lush greenery, and vibrant outdoor themes designed
-                          for joyful moments.</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" role="group" aria-label="5 / 9">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/bday.jpeg" alt="wd-Proposal" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover;">
-                        <h4>Birthday Decor</h4>
-                        <p>Imagine celebrating your special day amidst stunning decor and a magical atmosphere, where
-                          every detail is crafted to create an unforgettable birthday.</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" role="group" aria-label="6 / 9">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/prewedd.jpeg" alt="wd-Pre-wedding-photoshoots" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover;">
-                        <h4>Pre-wedding photoshoots</h4>
-                        <p>Capture the beginning of your forever with timeless photo memories set against breathtaking
-                          backdrops.</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" role="group" aria-label="7 / 9">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/haldi.jpeg" alt="wd-Pre-wedding-events" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover;">
-                        <h4>Pre-wedding events</h4>
-                        <p>Celebrate and cherish every moment of your wedding journey, from Mehendi and Haldi to Pheras
-                          and Bidaai.</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" role="group" aria-label="8 / 9">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/weddingDec.jpg" alt="wd-Honeymoon" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover;">
-                        <h4>Wedding Decor</h4>
-                        <p>Create a magical ambiance with stunning wedding decor, from elegant florals to radiant
-                          lighting.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" role="group" aria-label="9 / 9">
-                      <div class="swiper-card-wrapper" (click)="openModal()">
-                        <img src="assets/anniverssary.jpg" alt="wd-Marriage-anniversary" class="img-fluid"
-                          style="border-radius: 8px; max-height: 260px; width: 100%; object-fit: cover;">
-                        <h4>Marriage anniversary</h4>
-                        <p>Celebrate your anniversary with unforgettable experiences crafted just for the two of you.
-                        </p>
-                      </div>
-                    </div>
-
-
-
-
-
-                  </div>
-                  <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
-                    aria-controls="swiper-wrapper-23bc4bcefe5c7591" aria-disabled="false"></div>
-                  <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button"
-                    aria-label="Previous slide" aria-controls="swiper-wrapper-23bc4bcefe5c7591" aria-disabled="true">
-                  </div>
-                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                </div>
-              </div>
-
-              <div class="btn-wrapper-outer-lv mt-4 pt-3">
-                <div class="wedding-btn-wrapper">
-                  <a x-cq-linkchecker="skip" href="https://wa.me/917510123870">Enquire
-                    Now</a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-
-
-          <section class="container-fluid" id="wedding-love-story">
-            <div class="container">
-              <h3>Your love story deserves a backdrop as special and unforgettable as your journey together.
-              </h3>
-
-              <div class="row">
-
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                  <div class="love-store-outer-wrapper">
-                    <div class="row inner-row">
-                      <div class="col-lg-3 col-md-3 col-sm-12">
-                        <img src="assets/mandap-portrait.jpeg"
-                          style="max-height: 370px; width: 100%; object-fit: cover; border-radius: 8px;"
-                          alt="Close-knit-Weddings" class="img-fluid">
-                      </div>
-                      <div class="col-lg-9 col-md-9 col-sm-12">
-                        <div class="love-story-card">
-                          <h3>Close-knit Wedding</h3>
-                          <p><a>Kannur</a> | <a>Kozhikode</a> | <a>Thalassery
-                              Alappuzha (Alleppey)</a> | <a>Kumarakom
-                            </a> | <a>Munnar</a> | <a>Kovalam</a> | <a>Kochi </a>
-                            | <a>Wayanad</a> | <a>Bekal</a> | <a>Thekkady</a> | <a>Thrissur</a> | <a>Varkala</a> |
-                            <a>Kottayam</a> |
-                            <a>Kollam</a> | <a>Palakkad</a> | <a>Guruvayur</a> | <a>Thiruvananthapuram</a> |
-                            <a>Ponmudi</a> | <a>Nelliampathy</a>
-                            |<a>Pathanamthitta</a> | <a>Athirappilly</a> | <a>Pathanamthitta</a> | <a>Idukki</a> |
-                            <a>Athirappilly</a> |
-                            <a>Guruvayur</a> | <a>Vaikom</a> | <a>Kasaragod</a>
-                            | <a>Thekkady</a> | <a>Madikeri</a> | <a>Coorg</a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                  <div class="love-store-outer-wrapper">
-                    <div class="row inner-row">
-                      <div class="col-lg-9 col-md-9 col-sm-12">
-                        <div class="love-story-card">
-                          <h3>Full-scale Wedding</h3>
-                          <p><a>Kannur</a> | <a>Wayanad</a>
-                            | <a>Coorg</a> <a>Kasaragod</a> | <a>Kozhikode</a> |<a>Kochi</a> | <a>Malappuram</a> |
-                            <a>Mangalore</a> | <a>Munnar</a> | <a>Ooty</a>
-                            | <a>Mahe</a> | <a>Thrissur</a>
-                            |
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-3 col-sm-12">
-                        <img src="assets/wedding-couple-walk.jpeg"
-                          style="max-height: 370px; width: 100%; object-fit: cover; border-radius: 8px;"
-                          alt="Full-scale-Weddings" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="btn-wrapper-outer-lv">
-                <!-- <div class="wedding-btn-wrapper">
-                  <a href="/content/dam/sterlingv2/images/wedding-day/Banquetlist.pdf">Click to know capacity</a>
-                </div> -->
-                <div class="wedding-btn-wrapper">
-                  <a x-cq-linkchecker="skip" href="https://wa.me/917510123870">Enquire
-                    Now</a>
-                </div>
-              </div>
-
-            </div>
-          </section>
-
-          <section class="social-media">
-            <div class="container">
-              <h2 class="text-center">Follow Us</h2>
-              <div class="row justify-content-center">
-                <div class="col-auto">
-                  <a href="https://www.facebook.com" target="_blank" class="social-link facebook">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </div>
-                <div class="col-auto">
-                  <a href="https://www.twitter.com" target="_blank" class="social-link twitter">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </div>
-                <div class="col-auto">
-                  <a href="https://www.instagram.com/_happy_happenings?igsh=cHVtMW52MW5sZDl3" target="_blank"
-                    class="social-link instagram">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-
-          <section class="container-fluid" id="wedding-testimonal-section">
-            <div class="container">
-              <h2>Cherished Words of Love</h2>
-              <div class="row">
-
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                  <div class="testimonal-inner-wrapper">
-                    <img src="assets/decor3.jpg" alt="Sterling-Udaipur-Balicha" class="img-fluid">
-                    <div class="testimonal-content-wrapper">
-                      <p>"Sterling Munnar is a fantastic resort with a serene ambiance and outstanding staff. It’s the
-                        perfect getaway for families and an ideal venue for weddings. A big thank you to the entire team
-                        and Hussain for making my stay truly unforgettable."</p>
-                      <h3>Sarin Alexander</h3>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                  <div class="testimonal-inner-wrapper">
-                    <img src="assets/decor6.jpg" alt="Sterling-Puri" class="img-fluid">
-                    <div class="testimonal-content-wrapper">
-                      <p>"We chose Sterling Wayanad for our daughter's wedding and opted for the wedding planner
-                        recommended by the resort. The teams were incredibly cooperative and ensured a truly memorable
-                        celebration. The food was absolutely delicious, and the staff was receptive to feedback. Our
-                        guests had a wonderful experience, and so did we!"</p>
-                      <h3>Akshay</h3>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                  <div class="testimonal-inner-wrapper">
-                    <img src="assets/decor11.jpg" alt="Sterling-Grand-Madurai" class="img-fluid">
-                    <div class="testimonal-content-wrapper">
-                      <p>"
-                        Recently stayed at Sterling Athirappilly for a family wedding. The resort offered excellent
-                        service, with attentive staff who were great with kids and provided helpful local tips. Special
-                        thanks to Mr. Hussain for his exceptional service. We’ll definitely return!"</p>
-                      <h3>Jobin Mathew</h3>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </section>
-
-
-
-          <section class="container-fluid" id="sterling-gift-card-sec">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 ">
-                  <div class="emotion-image-wrapper">
-                    <img src="assets/logo1.jpeg" alt="sterling-gift-card" class="img-fluid">
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                  <div class="emotion-text-wrapper">
-                    <h3>Let them create a magical atmosphere with Sterling Decor.</h3>
-                    <p>Sterling Decor is the perfect way to transform any space into a breathtaking setting filled with
-                      unforgettable moments. Make their celebration truly unique. Explore now and add that special charm
-                      to their big day.</p>
-
-                    <div class="btn-wrapper-outer-lv mt-4 pt-3">
-                      <div class="wedding-btn-wrapper ml-0">
-                        <a x-cq-linkchecker="skip" href="https://wa.me/917510123870">Enquire</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </section>
-
-
-
-          <section class="container-fluid" id="wedding-enquire-section">
-            <div class="container">
-              <h4>Make your wedding a legend with stunning event backdrops and impeccable decorations at Sterling
-                Resorts, where every detail is crafted to perfection.</h4>
-              <div class="wedding-btn-wrapper">
-                <a x-cq-linkchecker="skip" href="https://wa.me/917510123870">Enquire
-                  Now</a>
-              </div>
-            </div>
-          </section>
-
-
-
-
-
-
-
-
-
-
-
-          <div class="modal" id="pdf-model2">
-            <div class="modal-dialog modal-fullscreen">
-              <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                  <!-- <img src="/content/dam/sterlingv2/images/wedding-day/banquetlist.png"> -->
-                </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossorigin="anonymous"></script>
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-              10: {
-                slidesPerView: 1,
-                spaceBetween: 5,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-              },
-            },
-          });
-        </script>
-        <script>
-          $(document).ready(function (e) {
-            var video = document.getElementById("wedding-video-wrapper");
-            $(video).on("click", function (e) {
-              video.muted = !video.muted;
-            });
-
-          });
-          var callAccordion = function (event, ele) {
-            event.preventDefault();
-            let header = $(ele);
-            let body = header.next(".accordion-body");
-            if (header.hasClass("active-accordion")) {
-              header.removeClass("active-accordion");
-              body.slideUp();
-            } else {
-              $(".accordion-header").removeClass("active-accordion");
-              $(".accordion-body").slideUp();
-              body.slideDown();
-              header.addClass("active-accordion");
-            }
-          }
-
-        </script>
+<!-- Happy Happenings - Modern Responsive Luxury Wedding Experience -->
+
+<!-- Top Sticky Luxury Navigation -->
+<header class="luxury-navbar">
+  <div class="nav-container">
+    <a class="brand-wrapper" (click)="scrollTo('home')">
+      <img src="assets/logo.jpeg" alt="Happy Happenings Logo" class="brand-logo-img">
+      <div class="brand-text">
+        <span class="brand-title">HAPPY HAPPENINGS</span>
+        <span class="brand-subtitle">Weddings &amp; Events</span>
       </div>
+    </a>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start">
-              <span class="contact-info">
-                📧 <a href="mailto:happyhappenings212@email.com">happyhappenings212&#x40;email.com</a>
-              </span>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <span class="contact-info">
-                📞 <a href="tel:+1234567890">+91 7510123870</a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </footer>
+    <!-- Desktop Navigation Links -->
+    <ul class="nav-links-desktop">
+      <li><a (click)="scrollTo('home')">Home</a></li>
+      <li><a (click)="scrollTo('services')">Services</a></li>
+      <li><a (click)="scrollTo('about')">About Us</a></li>
+      <li><a (click)="scrollTo('gallery')">Gallery</a></li>
+      <li><a (click)="scrollTo('destinations')">Destinations</a></li>
+      <li><a (click)="scrollTo('testimonials')">Reviews</a></li>
+      <li><a (click)="scrollTo('contact')">Contact</a></li>
+    </ul>
 
+    <!-- Action & Mobile Hamburger Button -->
+    <div class="nav-cta-wrapper">
+      <a href="https://wa.me/917510123870?text=Hello%20Happy%20Happenings,%20I%20would%20like%20to%20enquire%20about%20wedding%20planning%20services." 
+         target="_blank" 
+         class="btn-nav-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Enquire Now</span>
+      </a>
+
+      <button class="hamburger-btn" (click)="toggleMobileMenu()" aria-label="Toggle Navigation Menu">
+        <i class="fas" [ngClass]="isMobileMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+      </button>
     </div>
   </div>
-</div>
 
-@if(showModal){
+  <!-- Mobile Collapsible Menu Drawer -->
+  <div class="mobile-drawer" [ngClass]="{ 'is-open': isMobileMenuOpen }">
+    <ul class="mobile-nav-list">
+      <li><a (click)="scrollTo('home')">Home</a></li>
+      <li><a (click)="scrollTo('services')">Our Services</a></li>
+      <li><a (click)="scrollTo('about')">About Us</a></li>
+      <li><a (click)="scrollTo('gallery')">Wedding Gallery</a></li>
+      <li><a (click)="scrollTo('destinations')">Destinations &amp; Packages</a></li>
+      <li><a (click)="scrollTo('testimonials')">Client Reviews</a></li>
+      <li><a (click)="scrollTo('contact')">Get in Touch</a></li>
+    </ul>
 
-<app-event-modal [images]="eventImages" [showModal]="showModal" (modalClosed)="onModalClosed()"></app-event-modal>>
+    <div class="mobile-drawer-cta">
+      <a href="https://wa.me/917510123870?text=Hello%20Happy%20Happenings,%20I%20would%20like%20to%20enquire%20about%20wedding%20planning%20services." 
+         target="_blank" 
+         class="btn-mobile-wa"
+         (click)="closeMobileMenu()">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+      <a href="tel:+917510123870" 
+         class="btn-mobile-call"
+         (click)="closeMobileMenu()">
+        <i class="fas fa-phone-alt"></i> Call +91 7510123870
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Main Page Content -->
+<main>
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-container">
+      <div class="hero-location-badge">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Kerala &amp; Karnataka • Destination &amp; Intimate Weddings</span>
+      </div>
+
+      <img src="assets/rmbg.png" alt="Happy Happenings Banner" class="hero-logo-img">
+
+      <h1 class="hero-title">Celebrate Love, Intimately.</h1>
+      <p class="hero-subtitle">
+        Bespoke wedding planning, breathtaking floral mandaps, and curated destination celebrations designed exclusively for your love story.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="https://wa.me/917510123870?text=Hello%20Happy%20Happenings,%20I%20would%20like%20to%20plan%20our%20dream%20wedding." 
+           target="_blank" 
+           class="btn-hero-primary">
+          <i class="fab fa-whatsapp"></i>
+          <span>Plan Your Dream Wedding</span>
+        </a>
+
+        <button type="button" class="btn-hero-secondary" (click)="openModal()">
+          <i class="fas fa-images"></i>
+          <span>Explore 20+ Gallery Photos</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curated Services Overview -->
+  <section class="section-padding services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Deliver</span>
+        <h2 class="section-title">Crafting Unforgettable Celebrations</h2>
+        <p class="section-desc">
+          From tranquil resort buyouts to opulent multi-day celebrations, every element is curated with passionate artistry.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3>Bespoke Theme &amp; Decor</h3>
+          <p>Handcrafted mandaps, floral entrance pathways, and custom stage designs tailored to your cultural traditions.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fas fa-hotel"></i>
+          </div>
+          <h3>Curated Resort Venues</h3>
+          <p>Exclusive access to serene palm resorts, beachfront lawns, and heritage backwater venues across Kerala &amp; Karnataka.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fas fa-music"></i>
+          </div>
+          <h3>Experiential Moments</h3>
+          <p>Interactive games, live acoustic melodies, haldi rituals, and vibrant sangeet setups that captivate every guest.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Flawless Coordination</h3>
+          <p>Dedicated on-ground wedding directors ensuring stress-free execution so you soak in every precious moment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Emotion Section -->
+  <section class="section-padding about-section" id="about">
+    <div class="container">
+      <div class="about-content-row">
+        <div class="about-image-card">
+          <img src="assets/outdoor-celebration.jpeg" alt="Happy Happenings Celebration" loading="lazy">
+          <div class="about-floating-badge">
+            <div class="badge-number">100+</div>
+            <div class="badge-text">Memorable Weddings</div>
+          </div>
+        </div>
+
+        <div class="about-text-content">
+          <span class="section-tag">Our Philosophy</span>
+          <h2>Every feeling deserves its perfect moment.</h2>
+          <p class="about-lead">
+            Celebrate the essence of your love story in a sanctuary that is entirely yours.
+          </p>
+          <p class="about-body">
+            Step away from ordinary hurried venues and declare your vows in complete privacy. At Happy Happenings, we specialize in transforming picturesque resorts into your personal wonderland. From sacred traditional rituals to high-energy celebratory parties, every chapter unfolds in breathtaking surroundings.
+          </p>
+          <a href="https://wa.me/917510123870?text=Hello%20Happy%20Happenings,%20I%20would%20like%20to%20discuss%20our%20wedding%20vision." 
+             target="_blank" 
+             class="about-cta">
+            <i class="fab fa-whatsapp"></i>
+            <span>Speak with Our Planners</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Feature Highlight Cards -->
+      <div class="features-grid">
+        <div class="feature-pill-card">
+          <img src="assets/resort.png" alt="Resort Buyout" class="feature-icon-img">
+          <h4>Exclusive Resort Buyout Option</h4>
+        </div>
+
+        <div class="feature-pill-card">
+          <img src="assets/location.png" alt="Multiple Venues" class="feature-icon-img">
+          <h4>Multiple Themed Venues</h4>
+        </div>
+
+        <div class="feature-pill-card">
+          <img src="assets/juggling.png" alt="Engaging Activities" class="feature-icon-img">
+          <h4>Fun &amp; Engaging Activities</h4>
+        </div>
+
+        <div class="feature-pill-card">
+          <img src="assets/wedding-arch.png" alt="Themed Decor" class="feature-icon-img">
+          <h4>Signature Floral Decor</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video & Instagram Showcase Section -->
+  <section class="section-padding showcase-section" id="showcase">
+    <div class="container">
+      <div class="showcase-grid">
+        <div class="video-card-wrapper">
+          <img src="assets/videodecor.gif" alt="Wedding Decor Video Demonstration" loading="lazy">
+          <div class="video-badge">
+            <span class="pulse-dot"></span>
+            <span>Real Weddings Showcase</span>
+          </div>
+        </div>
+
+        <div class="instagram-card">
+          <div class="ig-header">
+            <div class="ig-icon-box">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div>
+              <span class="d-block text-muted" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Follow Our Journey</span>
+              <span class="ig-handle-text">&#64;_happy_happenings</span>
+            </div>
+          </div>
+          <h3>Step Inside the Magic on Instagram</h3>
+          <p>
+            Watch behind-the-scenes transformations, bridal walk inspirations, and real-time wedding highlights shared straight from our on-ground team.
+          </p>
+          <a href="https://www.instagram.com/_happy_happenings?igsh=cHVtMW52MW5sZDl3" 
+             target="_blank" 
+             class="btn-ig">
+            <i class="fab fa-instagram"></i>
+            <span>Explore Instagram Reels</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Swiper Gallery -->
+  <section class="section-padding gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio Highlights</span>
+        <h2 class="section-title">Moments of Magic &amp; Everlasting Love</h2>
+        <p class="section-desc">
+          Browse handcrafted mandaps, royal stages, and heartfelt smiles from our recent destination celebrations.
+        </p>
+      </div>
+
+      <div class="swiper-container-outer">
+        <!-- Navigation Buttons -->
+        <button class="swiper-nav-btn swiper-btn-prev swiper-button-prev" aria-label="Previous Slide">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="swiper-nav-btn swiper-btn-next swiper-button-next" aria-label="Next Slide">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div #swiperContainer class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+              <div class="gallery-slide-card" (click)="openModal()">
+                <div class="slide-img-wrapper">
+                  <img src="assets/resort-mandap-lawn.jpeg" alt="Resort Lawn Mandap" loading="lazy">
+                  <span class="slide-view-pill"><i class="fas fa-search-plus"></i> View</span>
+                </div>
+                <div class="slide-content-wrapper">
+                  <h4>Resort Lawn Mandap</h4>
+                  <p>Open-air tropical palm backdrop with ivory blossom floral arches.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="gallery-slide-card" (click)="openModal()">
+                <div class="slide-img-wrapper">
+                  <img src="assets/reception-stage-decor.jpeg" alt="Grand Reception Stage" loading="lazy">
+                  <span class="slide-view-pill"><i class="fas fa-search-plus"></i> View</span>
+                </div>
+                <div class="slide-content-wrapper">
+                  <h4>Grand Reception Stage</h4>
+                  <p>Opulent red &amp; white floral walls with glowing crystal chandeliers.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="gallery-slide-card" (click)="openModal()">
+                <div class="slide-img-wrapper">
+                  <img src="assets/vintage-mirror-decor.jpeg" alt="Traditional Vintage Decor" loading="lazy">
+                  <span class="slide-view-pill"><i class="fas fa-search-plus"></i> View</span>
+                </div>
+                <div class="slide-content-wrapper">
+                  <h4>Traditional Vintage Decor</h4>
+                  <p>Heritage wooden carved mirrors with traditional brass oil lamps.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="gallery-slide-card" (click)="openModal()">
+                <div class="slide-img-wrapper">
+                  <img src="assets/groomsmen-celebration.jpeg" alt="Groomsmen Celebration" loading="lazy">
+                  <span class="slide-view-pill"><i class="fas fa-search-plus"></i> View</span>
+                </div>
+                <div class="slide-content-wrapper">
+                  <h4>Wedding Party Celebrations</h4>
+                  <p>High-energy celebrations with lively photo-ops and party vibes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="gallery-slide-card" (click)="openModal()">
+                <div class="slide-img-wrapper">
+                  <img src="assets/bridal-entry.jpeg" alt="Bridal Entry Procession" loading="lazy">
+                  <span class="slide-view-pill"><i class="fas fa-search-plus"></i> View</span>
+                </div>
+                <div class="slide-content-wrapper">
+                  <h4>Bridal Entry &amp; Procession</h4>
+                  <p>Breathtaking entrance under custom floral canopies with family blessings.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="gallery-slide-card" (click)="openModal()">
+                <div class="slide-img-wrapper">
+                  <img src="assets/mandap-portrait.jpeg" alt="Traditional Mandap Portrait" loading="lazy">
+                  <span class="slide-view-pill"><i class="fas fa-search-plus"></i> View</span>
+                </div>
+                <div class="slide-content-wrapper">
+                  <h4>Mandap Stage Elegance</h4>
+                  <p>Royal seating canopy adorned with jasmine and fresh marigolds.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="gallery-slide-card" (click)="openModal()">
+                <div class="slide-img-wrapper">
+                  <img src="assets/wedding-rituals.jpeg" alt="Sacred Rituals" loading="lazy">
+                  <span class="slide-view-pill"><i class="fas fa-search-plus"></i> View</span>
+                </div>
+                <div class="slide-content-wrapper">
+                  <h4>Sacred Wedding Rituals</h4>
+                  <p>Traditional ceremonies framed in sacred grace, honoring timeless culture.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="gallery-slide-card" (click)="openModal()">
+                <div class="slide-img-wrapper">
+                  <img src="assets/haldi.jpeg" alt="Haldi Celebration" loading="lazy">
+                  <span class="slide-view-pill"><i class="fas fa-search-plus"></i> View</span>
+                </div>
+                <div class="slide-content-wrapper">
+                  <h4>Vibrant Haldi Ceremonies</h4>
+                  <p>Joyous yellow florals, ethnic umbrellas, and lively family traditions.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-actions">
+        <button type="button" class="btn-gallery-all" (click)="openModal()">
+          <i class="fas fa-expand-arrows-alt"></i>
+          <span>View All 20+ Wedding Photos &amp; Setups</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations & Packages Section -->
+  <section class="section-padding destinations-section" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Where We Plan</span>
+        <h2 class="section-title">Destinations &amp; Wedding Formats</h2>
+        <p class="section-desc">
+          Whether you dream of a close-knit retreat or an opulent destination extravaganza, our team manages every detail.
+        </p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Package 1: Intimate Weddings -->
+        <div class="package-card">
+          <div class="package-header-img">
+            <img src="assets/mandap-portrait.jpeg" alt="Intimate Wedding" loading="lazy">
+            <span class="package-badge">Intimate &amp; Boutique (50 - 200 Guests)</span>
+          </div>
+          <div class="package-content">
+            <h3>Boutique &amp; Intimate Weddings</h3>
+            <p>
+              Designed for couples seeking profound connections in secluded luxury. We secure entire boutique resorts, handle custom catering, and orchestrate sacred ceremonies with refined elegance.
+            </p>
+
+            <span class="destinations-title">Popular Intimate Destinations:</span>
+            <div class="dest-chips-wrapper">
+              <span class="dest-chip">Kannur</span>
+              <span class="dest-chip">Wayanad</span>
+              <span class="dest-chip">Coorg</span>
+              <span class="dest-chip">Munnar</span>
+              <span class="dest-chip">Bekal</span>
+              <span class="dest-chip">Alleppey</span>
+              <span class="dest-chip">Kumarakom</span>
+              <span class="dest-chip">Kovalam</span>
+              <span class="dest-chip">Varkala</span>
+              <span class="dest-chip">Athirappilly</span>
+            </div>
+
+            <a href="https://wa.me/917510123870?text=Hello%20Happy%20Happenings,%20I%20am%20interested%20in%20an%20Intimate%20Wedding%20Package." 
+               target="_blank" 
+               class="btn-pkg-enquire">
+              <i class="fab fa-whatsapp"></i> Enquire for Intimate Wedding
+            </a>
+          </div>
+        </div>
+
+        <!-- Package 2: Grand Full-Scale Weddings -->
+        <div class="package-card">
+          <div class="package-header-img">
+            <img src="assets/wedding-couple-walk.jpeg" alt="Grand Destination Wedding" loading="lazy">
+            <span class="package-badge">Grand Celebrations (200 - 1000+ Guests)</span>
+          </div>
+          <div class="package-content">
+            <h3>Grand Destination Celebrations</h3>
+            <p>
+              Full-scale luxury event management featuring spectacular floral stages, grand banquet styling, multi-camera media, celebrity artist coordination, and royal guest hospitality.
+            </p>
+
+            <span class="destinations-title">Popular Grand Venues:</span>
+            <div class="dest-chips-wrapper">
+              <span class="dest-chip">Kochi</span>
+              <span class="dest-chip">Kozhikode</span>
+              <span class="dest-chip">Thrissur</span>
+              <span class="dest-chip">Mangalore</span>
+              <span class="dest-chip">Bangalore</span>
+              <span class="dest-chip">Thiruvananthapuram</span>
+              <span class="dest-chip">Ooty</span>
+              <span class="dest-chip">Malappuram</span>
+            </div>
+
+            <a href="https://wa.me/917510123870?text=Hello%20Happy%20Happenings,%20I%20am%20interested%20in%20a%20Grand%20Destination%20Wedding." 
+               target="_blank" 
+               class="btn-pkg-enquire">
+              <i class="fab fa-whatsapp"></i> Enquire for Grand Wedding
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">Cherished Words of Love</h2>
+        <p class="section-desc">
+          Hear from happy couples and families who entrusted us with their once-in-a-lifetime celebrations.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testi-img-box">
+            <img src="assets/decor3.jpg" alt="Wedding in Munnar" loading="lazy">
+          </div>
+          <div class="testi-body">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">
+              "Sterling Munnar is a fantastic resort with a serene ambiance. It was the perfect venue for our family wedding. A heartfelt thank you to the Happy Happenings team for making our celebration truly unforgettable!"
+            </p>
+            <div class="testi-author">
+              <span class="author-name">Sarin Alexander</span>
+              <span class="author-location">Munnar Resort Wedding</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-img-box">
+            <img src="assets/decor6.jpg" alt="Wedding in Wayanad" loading="lazy">
+          </div>
+          <div class="testi-body">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">
+              "We chose Sterling Wayanad for our daughter's wedding and opted for Happy Happenings. The team was incredibly cooperative and ensured a memorable celebration. Our guests had a wonderful experience!"
+            </p>
+            <div class="testi-author">
+              <span class="author-name">Akshay &amp; Family</span>
+              <span class="author-location">Wayanad Destination Celebration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-img-box">
+            <img src="assets/decor11.jpg" alt="Wedding in Athirappilly" loading="lazy">
+          </div>
+          <div class="testi-body">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">
+              "Recently stayed at Sterling Athirappilly for a family wedding. The resort offered excellent service and the stage decor by the team was breathtaking. Exceptional service throughout!"
+            </p>
+            <div class="testi-author">
+              <span class="author-name">Jobin Mathew</span>
+              <span class="author-location">Athirappilly Waterfall Wedding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decor Spotlight Section -->
+  <section class="section-padding decor-spotlight-section" id="spotlight">
+    <div class="container">
+      <div class="spotlight-card">
+        <div class="spotlight-grid">
+          <div class="spotlight-img-box">
+            <img src="assets/logo1.jpeg" alt="Happy Happenings Decor Styling" loading="lazy">
+          </div>
+          <div class="spotlight-text-box">
+            <span class="section-tag">Signature Aesthetics</span>
+            <h3>Transforming Any Space into Pure Magic</h3>
+            <p>
+              From lush tropical greenery and royal scarlet drapery to minimalist rustic bohemian accents, our decor specialists transform your venue into a breathtaking visual feast. Explore our custom concepts to add that signature charm to your wedding day.
+            </p>
+            <a href="https://wa.me/917510123870?text=Hello%20Happy%20Happenings,%20I%20would%20like%20to%20learn%20more%20about%20your%20decor%20packages." 
+               target="_blank" 
+               class="btn-hero-primary" 
+               style="background: var(--gold-gradient); color: #fff;">
+              <i class="fab fa-whatsapp"></i>
+              <span>Consult with Our Decor Stylist</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Call to Action Section -->
+  <section class="final-cta-section" id="contact">
+    <div class="final-cta-container">
+      <h3>Ready to Begin Planning Your Dream Wedding?</h3>
+      <p>
+        Get in touch with our friendly wedding specialists today. We provide personalized venue consultations, theme presentations, and detailed package estimates.
+      </p>
+      <a href="https://wa.me/917510123870?text=Hello%20Happy%20Happenings,%20I%20am%20ready%20to%20plan%20our%20wedding!" 
+         target="_blank" 
+         class="btn-final-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with Us on WhatsApp: +91 7510123870</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- Luxury Dark Footer -->
+<footer class="luxury-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Col 1: Brand Info -->
+      <div class="footer-col">
+        <div class="footer-brand-title">HAPPY HAPPENINGS</div>
+        <div class="footer-brand-tagline">Wedding &amp; Event Planners</div>
+        <p>
+          Creating timeless memories and capturing the true essence of love across the most scenic resort destinations in Kerala and Karnataka.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://www.instagram.com/_happy_happenings?igsh=cHVtMW52MW5sZDl3" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/917510123870" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:happyhappenings212@email.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+917510123870" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-nav-list">
+          <li><a (click)="scrollTo('home')">Home</a></li>
+          <li><a (click)="scrollTo('services')">Our Services</a></li>
+          <li><a (click)="scrollTo('about')">About Us</a></li>
+          <li><a (click)="scrollTo('gallery')">Wedding Gallery</a></li>
+          <li><a (click)="scrollTo('destinations')">Destinations</a></li>
+          <li><a (click)="scrollTo('testimonials')">Client Reviews</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Key Regions -->
+      <div class="footer-col">
+        <h4>Coverage Regions</h4>
+        <ul class="footer-nav-list">
+          <li><a>Kannur &amp; Kozhikode</a></li>
+          <li><a>Wayanad &amp; Coorg</a></li>
+          <li><a>Munnar &amp; Thekkady</a></li>
+          <li><a>Kochi &amp; Alleppey</a></li>
+          <li><a>Kovalam &amp; Varkala</a></li>
+          <li><a>Mangalore &amp; Bangalore</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact Info -->
+      <div class="footer-col">
+        <h4>Direct Contact</h4>
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <span class="d-block" style="font-size: 0.8rem; color: #ffda79;">Call Us:</span>
+            <a href="tel:+917510123870">+91 7510123870</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <span class="d-block" style="font-size: 0.8rem; color: #ffda79;">WhatsApp:</span>
+            <a href="https://wa.me/917510123870" target="_blank">+91 7510123870</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <span class="d-block" style="font-size: 0.8rem; color: #ffda79;">Email:</span>
+            <a href="mailto:happyhappenings212@email.com">happyhappenings212&#x40;email.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <span class="d-block" style="font-size: 0.8rem; color: #ffda79;">Consultation Hours:</span>
+            <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 Happy Happenings. All rights reserved. Intimate &amp; Destination Weddings.</span>
+      <span>Designed with elegance for unforgettable memories.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Pill Button -->
+<a href="https://wa.me/917510123870?text=Hello%20Happy%20Happenings,%20I%20would%20like%20to%20enquire%20about%20wedding%20planning%20services." 
+   target="_blank" 
+   class="floating-whatsapp"
+   aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="floating-text">Chat on WhatsApp</span>
+</a>
+
+<!-- Fullscreen Gallery Modal Component -->
+@if (showModal) {
+  <app-event-modal [images]="eventImages" [showModal]="showModal" (modalClosed)="onModalClosed()"></app-event-modal>
 }

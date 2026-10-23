@@ -1,4 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-    font-family: Elsie, sans-serif;
+/* Happy Happenings - Luxury Wedding & Event Planning Global Styles */
+@import "swiper/css/bundle";
+
+:root {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-script: 'Oleo Script Swash Caps', 'Dancing Script', cursive;
+
+  /* Luxury Palette */
+  --primary-gold: #c5a059;
+  --primary-gold-dark: #9e7d3b;
+  --primary-gold-light: #f5ecd7;
+  --gold-gradient: linear-gradient(135deg, #e3c47a 0%, #c5a059 50%, #a07e38 100%);
+  --gold-glow: 0 4px 20px rgba(197, 160, 89, 0.35);
+
+  --rose-accent: #c47c8b;
+  --rose-light: #fbebee;
+  --rose-gradient: linear-gradient(135deg, #e6a07c 0%, #d88b97 50%, #c47c8b 100%);
+
+  --dark-navy: #15181c;
+  --charcoal: #242220;
+  --text-primary: #2a2521;
+  --text-secondary: #5e5751;
+  --text-muted: #8c827a;
+
+  --bg-cream: #faf7f2;
+  --bg-sand: #f5efe6;
+  --card-bg: #ffffff;
+  --border-light: rgba(197, 160, 89, 0.25);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+  --shadow-luxury: 0 20px 45px -10px rgba(197, 160, 89, 0.22);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  background-color: var(--bg-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede4;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-gold);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-gold-dark);
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-serif);
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+p {
+  font-family: var(--font-sans);
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+}
+
+/* Prevent unwanted mobile horizontal jumps */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
 }

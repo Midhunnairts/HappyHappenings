@@ -7,17 +7,36 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { EventImage, EventModalComponent } from "./event-modal/event-modal.component";
 import { IAlbum, Lightbox, LightboxModule } from 'ngx-lightbox';
 
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [EventModalComponent, LightboxModule],
+  imports: [CommonModule, EventModalComponent, LightboxModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   providers: [Lightbox]
 })
 export class AppComponent implements AfterViewInit {
-  title = 'Happy-Happenings';
+  title = 'Happy Happenings';
+  isMobileMenuOpen = false;
   @ViewChild('swiperContainer', { static: false }) swiperRef!: ElementRef;
+
+  toggleMobileMenu(): void {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  closeMobileMenu(): void {
+    this.isMobileMenuOpen = false;
+  }
+
+  scrollTo(sectionId: string): void {
+    this.closeMobileMenu();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   ngAfterViewInit(): void {
     new Swiper(this.swiperRef.nativeElement, {
